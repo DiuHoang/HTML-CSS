@@ -1,0 +1,28 @@
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 25px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+    color: black;
+    border-radius: 7px;
+    border-bottom: 2px solid black;
+}
+
+.containerTab {
+    color: black;
+}
+
+
+/* Clear floats after the columns */
+
+
+/* Closable button inside the container tab */
+
+.closebtn {
+    float: right;
+    color: black;
+    font-size: 35px;
+    cursor: pointer;
+}

@@ -1,0 +1,101 @@
+/* [ON BIG SCREEN] */
+
+
+/* Wrapper */
+
+#hamnav {
+    /* Optional */
+    position: sticky;
+    top: 0;
+}
+
+
+/* Hide Hamburger */
+
+#hamnav label,
+#hamburger {
+    display: none;
+}
+
+
+/* Horizontal Menu Items */
+
+#hamitems {
+    display: flex;
+    justify-content: right;
+}
+
+#hamitems a {
+    width: 8%;
+    /* 100% / 5 tabs = 20% */
+    padding: 10px;
+    color: #2f2f30;
+    text-decoration: none;
+    text-align: center;
+}
+
+#hamitems a:hover {
+    color: #2e030f;
+}
+
+#hamitems a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #303a7a;
+    transition: width .3s;
+}
+
+#hamitems a:hover::after {
+    width: 100%;
+    /* transition: width .3s; */
+}
+
+
+/* [ON SMALL SCREENS] */
+
+@media screen and (max-width: 768px) {
+    /* Show Hamburger Icon */
+    #hamnav label {
+        display: inline-block;
+        color: white;
+        background: #a02620;
+        font-style: normal;
+        font-size: 1.2em;
+        padding: 10px;
+    }
+    /* Break down menu items into vertical */
+    #hamitems a {
+        box-sizing: border-box;
+        display: block;
+        width: 100%;
+        border-top: 1px solid #333;
+    }
+    /* Toggle Show/Hide Menu */
+    #hamitems {
+        display: none;
+    }
+    #hamnav input:checked~#hamitems {
+        display: block;
+    }
+}
+
+
+/* [DOES NOT MATTER] */
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: arial, sans-serif;
+}
+
+
+/*  Header Css */
+
+.header-top {
+    height: 50px;
+    background-color: slategrey;
+    display: flex;
+}

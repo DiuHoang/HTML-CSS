@@ -1,0 +1,280 @@
+/* DemoCSS */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F5F5F5;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* Menu Css */
+
+.menu {
+    background-color: #4e67ba;
+    color: white;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #cacbcf;
+}
+
+.menu a:hover {
+    font-size: 19px;
+}
+
+.menu img {
+    width: 200px;
+    height: 200px;
+}
+
+
+/* Hide Line */
+
+.menu label,
+#line {
+    display: none;
+}
+
+.row-mobile {
+    display: none;
+}
+
+.content-mobile {
+    display: none;
+}
+
+@media screen and (max-width: 400px) {
+    .row-mobile {
+        display: block;
+    }
+    .row-desktop {
+        display: none;
+    }
+    .content-mobile {
+        display: block;
+        margin: 10px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        margin-left: 13px;
+    }
+    .content-mobile h5:hover {
+        color: #2e030f;
+    }
+    .content-mobile h5::after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 2px;
+        background: #06167d;
+        transition: width .3s;
+    }
+    .content-mobile h5:hover::after {
+        width: 100%;
+        /* transition: width .3s; */
+    }
+    .content-desktop {
+        display: none;
+    }
+    .menu img {
+        width: 300px;
+        height: 200px;
+        margin-left: 50px;
+    }
+    /* Show Hamburger Icon */
+    .menu label,
+    #line {
+        display: inline-block;
+        color: white;
+        background: #a02620;
+        font-style: normal;
+        font-size: 1.2em;
+        padding: 7px;
+    }
+    /* Break down menu items into vertical */
+    .menu-items a {
+        box-sizing: border-box;
+        display: block;
+        width: 100%;
+        border-top: 1px solid #333;
+    }
+    /* Toggle Show/Hide Menu */
+    .menu-items {
+        display: none;
+    }
+    .menu input:checked~.menu-items {
+        display: block;
+    }
+    .content-infor {
+        display: flex;
+        justify-content: space-between;
+        background-color: #7EA6E6;
+    }
+    .content-infor img {
+        width: 70px;
+        height: 70px;
+        border-radius: 40px;
+        margin-top: 40px;
+    }
+    .content-score {
+        background-color: white;
+        border-radius: 5px;
+        border: solid 1px #e0e0e0;
+        overflow: hidden;
+        margin-bottom: 25px;
+        padding-left: 25px;
+        padding-right: 25px;
+        margin-left: 13px;
+        margin-right: 13px;
+    }
+    .content-score h5 {
+        font-style: italic;
+        font-weight: bold;
+    }
+    .content-score h6 {
+        margin-bottom: 7px;
+    }
+    .content a {
+        margin-left: 10px;
+    }
+    .header-bar {
+        display: none;
+    }
+    .content-student {
+        background-color: white;
+        border-radius: 5px;
+        border: solid 1px #f1f1f1;
+        margin-left: 12px;
+        margin-right: 12px;
+        margin-bottom: 10px;
+    }
+}
+
+.menu h3 {
+    font-style: italic;
+}
+
+.content a {
+    text-decoration: none;
+    color: #4ea0cf;
+}
+
+.content button {
+    background-color: #7ea6e6;
+    border-radius: 7px;
+    height: 35px;
+    /* border: none */
+}
+
+.content button:hover {
+    background-color: #4e67ba;
+    color: white;
+}
+
+.content-infor {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.content-infor pre {
+    font-size: 15px;
+}
+
+
+/* table information */
+
+#students {
+    font-family: 'Roboto', sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#students td,
+#students th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#students tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#students tr:hover {
+    background-color: #ddd;
+}
+
+#students th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #748399;
+    color: white;
+}

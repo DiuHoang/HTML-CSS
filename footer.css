@@ -1,0 +1,50 @@
+/* Footer Css */
+
+.footer {
+    background-color: #424e55;
+    color: #ffffff;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 15%;
+    padding-right: 15%;
+    color: white;
+}
+
+.footer>div {
+    float: left;
+}
+
+.footer p {
+    font-size: 12px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer a:hover {
+    font-size: 16px;
+}
+
+.footer span {
+    color: #02cbf7;
+}
+
+.footer-bottom {
+    background-color: #303030;
+    text-align: center;
+    margin-top: -15px;
+    color: #b5b3ae;
+    height: 50px;
+    padding-top: 1px;
+}
+@media screen and (max-width: 400px){
+    .footer{
+        display: grid;
+    }
+    .footer-bottom{
+        font-size: 10px;
+    }
+}
